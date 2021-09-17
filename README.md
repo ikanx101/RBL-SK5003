@@ -1,5 +1,5 @@
 # RBL-SK5003
-Repo Project RBL dengan Python
+### Repo Project RBL dengan Python
 
 ---
 
@@ -35,3 +35,7 @@ Program Python nya akan men-generate soal random dengan cara men-generate sepasa
 Setelah anak mengisi soal-soal tersebut, akan ada laporan yang akan keluar. Seperti: total skor, waktu pengerjaan, rata2 waktu pengerjaan per soal, tipe soal yang memiliki skor tertinggi/terendah, dll. 
  
 Report ini bisa disajikan dalam bentuk grafik juga.
+
+---
+
+Versi __R__ nya bisa dicek di [sini](https://github.com/ikanx101/Math-SD).
