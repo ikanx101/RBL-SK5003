@@ -64,4 +64,4 @@ seed(1)
 randint(0, 10) 
 ```
 
-2. Visualisasi data dengan `matplotlib`
+2. Visualisasi data dengan `matplotlib` 
