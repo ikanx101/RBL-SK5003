@@ -48,7 +48,7 @@ Report ini bisa disajikan dalam bentuk grafik juga.
 
 Hal yang dikerjakan:
 
-- Pembuatan repo.
+- Pembuatan repo di _github_ sebagai tempat pengerjaan dan jurnal _progress_.
 - _Brainstorming_ alur pengerjaan.
 
 Hal yang sedang dipelajari:
