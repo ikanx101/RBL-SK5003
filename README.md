@@ -63,3 +63,5 @@ seed(1)
 # generate some integers
 randint(0, 10) # generate di batas 0 sampai 10
 ```
+
+Visualisasi data dengan `matplotlib`
