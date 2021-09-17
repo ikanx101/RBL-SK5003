@@ -1,6 +1,7 @@
 # RBL-SK5003
 ### Repo Project RBL dengan Python
 
+Dibuat oleh `20921003` dan `20921004`.
 ---
 
 ## Latar Belakang
