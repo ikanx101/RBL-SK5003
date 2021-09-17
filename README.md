@@ -4,6 +4,7 @@
 
 
 Dibuat oleh `20921003` dan `20921004`.
+
 ---
 
 ## Latar Belakang
@@ -41,4 +42,9 @@ Report ini bisa disajikan dalam bentuk grafik juga.
 
 ---
 
-Versi __R__ nya bisa dicek di [sini](https://github.com/ikanx101/Math-SD).
+# _Progress_
+
+### 17 September 2021
+
+- Pembuatan repo.
+- _Brainstorming_.
