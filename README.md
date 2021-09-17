@@ -44,24 +44,24 @@ Report ini bisa disajikan dalam bentuk grafik juga.
 
 # _Progress_
 
-### 17 September 2021
+## 17 September 2021
 
 Hal yang dikerjakan:
 
 - Pembuatan repo.
-- _Brainstorming_.
+- _Brainstorming_ alur pengerjaan.
 
-Hal yang dipelajari:
+Hal yang sedang dipelajari:
 
-Cara _generating random integer_ di __Python__.
+1. Cara _generating random integer_ di __Python__.
 
 ```
 from random import seed
 from random import randint
 # seed random number generator
 seed(1)
-# generate some integers
-randint(0, 10) # generate di batas 0 sampai 10
+# contoh generate integer antara bilangan 0 sampai 10
+randint(0, 10) 
 ```
 
-Visualisasi data dengan `matplotlib`
+2. Visualisasi data dengan `matplotlib`
