@@ -46,5 +46,20 @@ Report ini bisa disajikan dalam bentuk grafik juga.
 
 ### 17 September 2021
 
+Hal yang dikerjakan:
+
 - Pembuatan repo.
 - _Brainstorming_.
+
+Hal yang dipelajari:
+
+Cara _generating random integer_ di __Python__.
+
+```
+from random import seed
+from random import randint
+# seed random number generator
+seed(1)
+# generate some integers
+randint(0, 10) # generate di batas 0 sampai 10
+```
