@@ -12,7 +12,21 @@ Program ini bertujuan utk generating random soal
 berhitung untuk anak-anak kelas 2-4 SD.
 """
 
+# ==============================================================
+# penentuan level berdasarkan angka yang akan digenerate:
+  # penjumlahan dan pengurangan: 
+    # easy: 1-30
+    # medium: 30 - 70
+    # hard: 70 - 929
+  # perkalian dan pembagian:
+    # easy: 1-5
+    # medium: 4-9
+    # hard: 7 - 15
+# ==============================================================
+
+
 # import fungsi yang dibutuhkan
-from random import
+from random import randint
+
 # Fungsi Penjumlahan
 
