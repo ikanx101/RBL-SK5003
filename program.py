@@ -1,6 +1,6 @@
 """
 =================================
-RESEARCH BASED LEARNING
+RESEARCH-BASED LEARNING
 SK5003 - PEMROGRAMAN DALAM SAINS
 =================================
 
