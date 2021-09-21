@@ -29,4 +29,18 @@ berhitung untuk anak-anak kelas 2-4 SD.
 from random import randint
 
 # Fungsi Penjumlahan
+def jumlah() :
+  a = randint(1,30)
+  b = randint(1,30)
+  c = a + b
+  print(a, ' + ', b, ' = ')
+  jawab = input('jawab: ')
+  jawab = int(jawab)
+  if c == jawab :
+     cek = 1
+     print(cek)
+  else :
+     cek = 0
+     print(cek)
 
+jumlah()
