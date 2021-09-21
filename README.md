@@ -65,3 +65,8 @@ randint(0, 10)
 ```
 
 2. Visualisasi data dengan `matplotlib` 
+
+## 21 September 2021
+
+- Definisi level _easy_, _medium_, dan _hard_.
+- _Function_ sederhana untuk penjumlahan.
