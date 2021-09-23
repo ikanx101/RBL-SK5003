@@ -70,3 +70,7 @@ randint(0, 10)
 
 - Definisi level _easy_, _medium_, dan _hard_.
 - _Function_ sederhana untuk penjumlahan.
+
+## 23 September 2021
+
+- Pembuatan proposal sesuai dengan _template_ yang diberikan.
