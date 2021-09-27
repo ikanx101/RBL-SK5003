@@ -1,0 +1,99 @@
+---
+title: "Proposal Research-Based Learning"
+subtitle: "Math Games for Kids"
+author: "Winda Wijayasari<br>Mohammad Rizka Fadhli"
+institute: "20921003@mahasiswa.itb.ac.id<br>20921004@mahasiswa.itb.ac.id"
+date: "`r format(Sys.Date(), '%d %B %Y')`"
+output:
+  xaringan::moon_reader:
+    mathjax: default
+    lib_dir: libs
+    css: [default,"footer-header.css", fc, fc-fonts]
+    seal: true
+    nature:
+      ratio: '18:10'
+      slideNumberFormat: '%current%' 
+      highlightStyle: ir-black
+      highlightLines: true
+      countIncrementalSlides: false
+---
+layout: true
+
+<div class="my-footer"><span>Proposal RBL</span></div>
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+---
+
+class: middle,center,inverse
+
+# PENDAHULUAN
+
+---
+class: center
+
+```{r out.width="40%",echo=FALSE,fig.align='center'}
+knitr::include_graphics("Screenshot from 2021-09-27 15-12-44.png")
+```
+
+https://www.bbc.com/indonesia/indonesia-51769074
+
+---
+# PENDAHULUAN
+
+## Latar Belakang
+
+Pandemi mengakibatkan hampir semua sekolah ditutup. Baik dari tingkat SD hingga perguruan tinggi. Akibatnya orang tua harus mengambil peran sebagai guru yang bertugas untuk:
+
+- Mengajarkan
+- Memberi evaluasi
+
+> Anak SD di kelas 3 - 4 diharapkan sudah bisa mengerjakan soal penambahan, pengurangan, perkalian, dan pembagian yang sederhana. 
+
+--
+
+## Masalah
+Dalam hal memberikan evaluasi, beberapa masalah yang muncul antara lain:
+
+- Buku latihan yang terbatas.
+- Keterbatasan guru maupun orang tua dalam mengecek pekerjaan siswa (edweek.com).
+- Tingginya distraksi dari aktivitas lain seperti video game terutama untuk generasi _alpha_ yang sangat _fluent_ terhadap teknologi.
+
+---
+
+class: middle, center
+
+# Siapa Generasi _Alpha_?
+
+## Generasi alpha (2011 – 2025) generasi yang paling akrab dengan teknologi digital  dan  generasi  yang  diklaim  paling  cerdas  dibandingkan generasi  generasi  sebelumnya. (McCrandle, 2020).
+
+---
+class:middle
+
+# PENDAHULUAN
+
+## TUJUAN 
+
+Oleh karena itu, program ini dibuat agar anak bisa mendapatkan soal latihan berhitung yang di-_generate_ secara _random_ dan __otomatis__ dengan __tingkat kesulitan soal dapat disesuaikan__. Sehingga akan tercipta soal latihan yang __tidak terbatas jumlahnya__. Awalnya mungkin akan terlihat seperti mengerjakan _game_ di komputer.
+
+---
+class:middle
+# METODE
+
+## _Resources_ yang Diperlukan
+Untuk membuat program ini, diperlukan beberapa _resources_ dan prinsip komputasi seperti:
+
+- _Function_. Digunakan untuk membuat _generator_ soal dan beberapa __notifikasi__ lainnya.
+- _Looping_. Digunakan untuk memanggil fungsi soal tergantung _input_ dari _user_.
+- _Conditional_. Digunakan untuk mengatur level kesulitan soal.
+- _Menyimpan data_. 
+- _Visualisasi data_.
+
+---
+class: middle,center,inverse
+
+# Terima Kasih
+## _Feel free to discuss_
+##### _created using Xaringan in R_

@@ -74,3 +74,6 @@ randint(0, 10)
 ## 23 September 2021
 
 - Pembuatan proposal sesuai dengan _template_ yang diberikan.
+
+## 27 September 2021
+- _Submit_ proposal ke Ms. Teams.
