@@ -6,3 +6,9 @@ output: github_document
 
 # Readme
 Uji coba render dengan cli
+
+caranya 
+
+```
+render("Rmd", output_file = "md")
+```
