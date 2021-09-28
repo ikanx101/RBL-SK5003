@@ -1,0 +1,8 @@
+---
+title: "readme"
+author: "sir ikanx"
+output: github_document
+---
+
+# Readme
+Uji coba render dengan cli
