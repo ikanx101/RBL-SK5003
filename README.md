@@ -80,3 +80,16 @@ randint(0, 10)
 
 ## 28 September 2021
 - Proposal presentasi dengan _Xaringan_ __R__.
+- Presentasi proposal __RBL__.
+
+Hal yang dipelajari: 
+
+Belajar function untuk mengambil `Sys.time()` dengan _Python_:
+
+```
+import datetime
+now = datetime.datetime.now()
+end = datetime.datetime.now()
+time_delta = end-now
+total_waktu = time_delta.total_seconds()
+```
