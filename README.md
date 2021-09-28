@@ -1,6 +1,6 @@
 # RBL-SK5003
 
-### Repo Project RBL dengan Python
+## Repo _Project_ ___Research-Based Learning___ dengan __Python__
 
 
 Dibuat oleh `20921003` dan `20921004`.
@@ -77,3 +77,6 @@ randint(0, 10)
 
 ## 27 September 2021
 - _Submit_ proposal ke Ms. Teams.
+
+## 28 September 2021
+- Proposal presentasi dengan _Xaringan_ __R__.
