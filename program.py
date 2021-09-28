@@ -29,12 +29,16 @@ berhitung untuk anak-anak kelas 2-4 SD.
 from random import randint
 
 # Fungsi Penjumlahan
-def jumlah() :
-  a = randint(1,30)
-  b = randint(1,30)
+def jumlah(x1,x2) :
+  a = randint(x1,x2)
+  b = randint(x1,x2)
   c = a + b
   print(a, ' + ', b, ' = ')
+  now = datetime.datetime.now()
   jawab = input('jawab: ')
+  end = datetime.datetime.now()
+  time_delta = end-now
+  total_waktu = time_delta.total_seconds()
   jawab = int(jawab)
   if c == jawab :
      cek = 1
