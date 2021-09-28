@@ -135,6 +135,77 @@ nomnoml::nomnoml("
 ```
 
 ---
+class:middle
+# CONTOH _FUNCTION_
+
+.pull-left[
+
+## Penjumlahan
+
+```
+import datetime
+
+def jumlah(x1,x2) :
+  a = randint(x1,x2)
+  b = randint(x1,x2)
+  c = a + b
+  print(a, ' + ', b, ' = ')
+  now = datetime.datetime.now()
+  jawab = input('jawab: ')
+  now = datetime.datetime.now()
+  time_delta = end-now
+  total_waktu = time_delta.total_seconds()
+  jawab = int(jawab)
+  if c == jawab :
+     cek = 1
+     print(cek)
+  else :
+     cek = 0
+     print(cek)
+
+```
+
+]
+
+.pull-left[
+
+## Level Kesulitan Soal
+
+Level kesulitan soal akan ditentukan oleh batas `x1` dan `x2` sesuai dengan banyaknya digit yang dipelajari oleh anak di kelasnya.
+
+## Waktu Menjawab
+
+Waktu menjawab setiap soal akan dihitung dan dijadikan suatu pengukuran di _report_ kelak.
+
+## Jawaban Benar
+
+Variabel `cek` akan menjadi _key variable_ untuk mengetahui berapa banyak soal yang dijawab dengan benar.
+
+]
+
+---
+class:middle
+
+# _MOCK UP_
+
+## Penentuan Banyaknya Soal
+
+```{r out.width="70%",echo=FALSE,fig.align='center'}
+knitr::include_graphics("Screenshot_20210928_112402_tech.ula.jpg")
+```
+
+---
+class:middle
+
+# _MOCK UP_
+
+## _Results_
+
+```{r out.width="70%",echo=FALSE,fig.align='center'}
+knitr::include_graphics("Screenshot_20210928_112503_tech.ula.jpg")
+```
+
+---
 class: middle,center,inverse
 
 # Terima Kasih
