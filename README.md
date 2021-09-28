@@ -84,7 +84,7 @@ randint(0, 10)
 
 Hal yang dipelajari: 
 
-Belajar function untuk mengambil `Sys.time()` dengan _Python_:
+Belajar _function_ untuk mengambil `Sys.time()` dengan _Python_:
 
 ```
 import datetime
