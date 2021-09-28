@@ -152,7 +152,7 @@ def jumlah(x1,x2) :
   print(a, ' + ', b, ' = ')
   now = datetime.datetime.now()
   jawab = input('jawab: ')
-  now = datetime.datetime.now()
+  end = datetime.datetime.now()
   time_delta = end-now
   total_waktu = time_delta.total_seconds()
   jawab = int(jawab)
