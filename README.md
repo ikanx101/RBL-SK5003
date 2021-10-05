@@ -97,3 +97,7 @@ total_waktu = time_delta.total_seconds()
 ## 4 Oktober 2021
 
 _Submit_ proposal di _channel Teams_.
+
+## 5 Oktober 2021
+
+`program.py` sudah bisa di-run untuk men-_generate_ soal penjumlahan secara sederhana.
