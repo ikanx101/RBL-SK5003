@@ -93,3 +93,7 @@ end = datetime.datetime.now()
 time_delta = end-now
 total_waktu = time_delta.total_seconds()
 ```
+
+## 4 Oktober 2021
+
+_Submit_ proposal di _channel Teams_.
