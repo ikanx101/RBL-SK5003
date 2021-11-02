@@ -34,6 +34,7 @@ def clear():
 from random import randint # digunakan untuk melihat waktu
 import datetime # untuk melihat waktu
 import matplotlib.pyplot as plt # untuk melakukan plot
+import numpy as np
 
 
 clear()
@@ -151,10 +152,14 @@ print("Kamu berhasil menjawab: ",sum(benar)," soal dari total ",len(benar)," soa
 print("Waktu yang dibutuhkan: ",round(sum(waktu),4)," detik")
 
 # bikin plot
+benar_cum = np.cumsum(benar)
+waktu_cum = np.cumsum(waktu)
+
 plt.figure(figsize = (16,9))
-plt.plot(waktu,benar,color = "red",linewidth=0.5,linestyle="--",label='delta = 5')
+plt.plot(waktu_cum,benar_cum,color = "red",linewidth=0.5,linestyle="--",label='delta = 5')
 plt.xlabel('time')
 plt.ylabel('benar')
-plt.legend()
+plt.title("Cumulative Score Over Time")
+#plt.legend()
 plt.show()
 plt.savefig('rekap.png',dpi = 450)
