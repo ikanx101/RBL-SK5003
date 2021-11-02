@@ -157,9 +157,9 @@ def bagi(x3,x4) :
 lv = level()
 
 # bikin array untuk rekap
-benar = [0] # berapa banyak jawaban benar
-waktu = [0] # waktu yang dibutuhkan
-tipe_soal = ["-"] # tipe soal
+benar = [] # berapa banyak jawaban benar
+waktu = [] # waktu yang dibutuhkan
+tipe_soal = [] # tipe soal
 
 
 # menentukan seberapa banyak soal yang dikerjakan
@@ -262,15 +262,17 @@ print("\n\nGrafik skor sudah tersedia di working directory")
 # bikin rekap berupa file csv
 # memberikan nama file
 f = open("rekap_jawaban.csv","w+")
+f.write("soal,benar,waktu dibutuhkan,tipe soal\n")
 for j in range(0,len(benar)) :
-  print (j,". benar = ",benar[j],"; waktu_dibutuhkan = ",waktu[j],"; tipe soal = ",tipe_soal[j])
-  f.write(str(j)+","+str(benar[j])+","+str(waktu[j])+","+str(tipe_soal[j])+"\n")
+  # print (j,". benar = ",benar[j],"; waktu_dibutuhkan = ",waktu[j],"; tipe soal = ",tipe_soal[j])
+  f.write(str(j+1)+","+str(benar[j])+","+str(waktu[j])+","+str(tipe_soal[j])+"\n")
 f.close()
 
 # bikin plot
 benar_cum = np.cumsum(benar)/len(benar) * 100
 benar_cum = np.round(benar_cum,decimals=2)
 waktu_cum = np.cumsum(waktu)
+
 
 plt.figure(figsize = (16,9))
 plt.plot(waktu_cum,benar_cum,color = "blue",linewidth=1.5,linestyle="--",label='Skor')
