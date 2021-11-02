@@ -154,6 +154,8 @@ print("Waktu yang dibutuhkan: ",round(sum(waktu),4)," detik")
 # bikin plot
 benar_cum = np.cumsum(benar)
 waktu_cum = np.cumsum(waktu)
+print(benar_cum)
+print(waktu_cum)
 
 plt.figure(figsize = (16,9))
 plt.plot(waktu_cum,benar_cum,color = "red",linewidth=0.5,linestyle="--",label='delta = 5')
