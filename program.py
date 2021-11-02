@@ -257,7 +257,7 @@ print("Kamu berhasil menjawab ",kali_benar," soal perkalian dari ",n_perkalian+1
 print("\n")
 bagi_benar = sum(bagi_benar)
 print("Kamu berhasil menjawab ",bagi_benar," soal pembagian dari ",n_pembagian+1," soal")
-print("\n\nGrafik skor sudah tersedia di working directory")
+print("\n\nGrafik skor dan rekap berupa csv sudah tersedia di working directory.\n\n")
 
 # bikin rekap berupa file csv
 # memberikan nama file
