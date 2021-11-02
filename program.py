@@ -157,12 +157,10 @@ def bagi(x3,x4) :
 lv = level()
 
 # bikin array untuk rekap
-benar = [] # berapa banyak jawaban benar
-waktu = [] # waktu yang dibutuhkan
+benar = [0] # berapa banyak jawaban benar
+waktu = [0] # waktu yang dibutuhkan
+tipe_soal = ["-"] # tipe soal
 
-# initial condition
-benar[0] = 0
-waktu[0] = 0
 
 # menentukan seberapa banyak soal yang dikerjakan
 print("\n\nPENJUMLAHAN\n")
@@ -196,6 +194,7 @@ while i <= n_penjumlahan :
   benar.append(tes[0])
   waktu.append(tes[1])
   jumlah_benar.append(tes[0])
+  tipe_soal.append("Penjumlahan")
   i = i + 1
 
 # mulai iterasi untuk pengurangan
@@ -207,6 +206,7 @@ while i<=n_pengurangan :
   benar.append(tes[0])
   waktu.append(tes[1])
   kurang_benar.append(tes[0])
+  tipe_soal.append("Pengurangan")
   i = i + 1
 
 # mulai iterasi untuk perkalian
@@ -218,6 +218,7 @@ while i<=n_perkalian :
   benar.append(tes[0])
   waktu.append(tes[1])
   kali_benar.append(tes[0])
+  tipe_soal.append("Perkalian")
   i = i + 1
 
 # mulai iterasi untuk pembagian
@@ -229,6 +230,7 @@ while i<=n_pembagian :
   benar.append(tes[0])
   waktu.append(tes[1])
   bagi_benar.append(tes[0])
+  tipe_soal.append("Pembagian")
   i = i + 1
 
 # output ke user
@@ -256,6 +258,14 @@ print("\n")
 bagi_benar = sum(bagi_benar)
 print("Kamu berhasil menjawab ",bagi_benar," soal pembagian dari ",n_pembagian+1," soal")
 print("\n\nGrafik skor sudah tersedia di working directory")
+
+# bikin rekap berupa file csv
+# memberikan nama file
+f = open("rekap_jawaban.csv","w+")
+for j in range(0,len(benar)) :
+  print (j,". benar = ",benar[j],"; waktu_dibutuhkan = ",waktu[j],"; tipe soal = ",tipe_soal[j])
+  f.write(str(j)+","+str(benar[j])+","+str(waktu[j])+","+str(tipe_soal[j])+"\n")
+f.close()
 
 # bikin plot
 benar_cum = np.cumsum(benar)/len(benar) * 100

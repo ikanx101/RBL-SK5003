@@ -101,3 +101,14 @@ _Submit_ proposal di _channel Teams_.
 ## 5 Oktober 2021
 
 `program.py` sudah bisa di-run untuk men-_generate_ soal penjumlahan secara sederhana.
+
+## 12 Oktober 2021
+
+`program.py` sudah bisa di-run secara utuh.
+
+## 19 Oktober 2021
+
+_Software_ dalam bentuk UI sudah dibuat dengan catatan sebagai berikut:
+
+1. Belum ada _output_ berupa grafik.
+1. Belum ada _output_ berupa _file_.
