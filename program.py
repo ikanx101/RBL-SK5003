@@ -19,9 +19,9 @@ berhitung untuk anak-anak kelas 2-4 SD.
     # medium: 30 - 70
     # hard: 70 - 929
   # perkalian dan pembagian:
-    # easy: 1-5
-    # medium: 4-9
-    # hard: 7 - 15
+    # easy: 1-8
+    # medium: 4-12
+    # hard: 8-20
 # ==============================================================
 
 # fungsi untuk clear halaman
@@ -44,29 +44,49 @@ print('Halo,\n\nSelamat datang di program generator soal Matematika di Python.\n
 # ini masih sederhana ya utk penjumlahan terlebih dahulu
 def level():
   print('Level kesulitan soal:\n1. easy\n2. medium\n3. hard\n\n(Masukkan angka level)\n\n')
-  lvl = input('level: ')
-  lvl = int(lvl)
+  # digunakan untuk mengecek apakah inputnya berupa integer atau tidak
+  marker = True
+  while marker:
+   try:
+    lvl = int(input("level: "))
+    if lvl > 3 or lvl < 1:
+      marker = True
+      print("Masukkan angka sesuai instruksi")
+    else: break
+   except ValueError:
+    print("Format input salah. Masukkan angka sesuai instruksi.\n\n")
+
   if lvl == 1:
-    x1 = 1
-    x2 = 30
-    x3 = 1
-    x4 = 5
+     x1 = 1
+     x2 = 30
+     x3 = 1
+     x4 = 8
   if lvl == 2:
-    x1 = 30
-    x2 = 70
-    x3 = 4
-    x4 = 9
+     x1 = 30
+     x2 = 70
+     x3 = 4
+     x4 = 12
   if lvl == 3:
-    x1 = 70
-    x2 = 200
-    x3 = 7
-    x4 = 15
+     x1 = 70
+     x2 = 200
+     x3 = 8
+     x4 = 20
   out = [x1,x2,x3,x4]
   return(out)
 
 # fungsi untuk menentukan n soal
 def n_soal():
-  n = input("Banyaknya soal yang mau dikerjakan: ")
+  # memastikan bahwa hanya bleh masuk n berupa integer > 0
+  marker = True
+  while marker:
+   try:
+    n = int(input("Banyaknya soal yang mau dikerjakan: "))
+    if n < 0:
+      marker = True
+      print("Masukkan angka bilangan bulat positif.\n\n")
+    else: break
+   except ValueError:
+    print("Masukkan angka sesuai instruksi (bilangan bulat).\n\n")
   return(n)
 
 # fungsi penjumlahan
