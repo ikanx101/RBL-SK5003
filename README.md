@@ -112,3 +112,7 @@ _Software_ dalam bentuk UI sudah dibuat dengan catatan sebagai berikut:
 
 1. Belum ada _output_ berupa grafik.
 1. Belum ada _output_ berupa _file_.
+
+## 8 November 2021
+
+_Fixed_ masalah _non positive integer input_ pada `level` soal dan `n` soal.
