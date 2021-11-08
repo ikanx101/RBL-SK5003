@@ -96,7 +96,16 @@ def jumlah(x1,x2) :
   c = a + b
   print(a, ' + ', b, ' = ')
   now = datetime.datetime.now()
-  jawab = input('jawab: ')
+  
+  # memastikan agar hanya integer yang boleh diinput
+  marker = True
+  while marker:
+   try:
+    jawab = int(input("jawab: "))
+    break
+   except ValueError:
+    print("Masukkan hanya angka!\n")
+  
   end = datetime.datetime.now()
   time_delta = end-now
   total_waktu = time_delta.total_seconds()
@@ -116,7 +125,16 @@ def kurang(x1,x2) :
   c = a + b
   print(c, ' - ', a, ' = ')
   now = datetime.datetime.now()
-  jawab = input('jawab: ')
+  
+  # memastikan agar hanya integer yang boleh diinput
+  marker = True
+  while marker:
+   try:
+    jawab = int(input("jawab: "))
+    break
+   except ValueError:
+    print("Masukkan hanya angka!\n")
+    
   end = datetime.datetime.now()
   time_delta = end-now
   total_waktu = time_delta.total_seconds()
@@ -136,7 +154,16 @@ def kali(x3,x4) :
   c = a * b
   print(a, ' x ', b, ' = ')
   now = datetime.datetime.now()
-  jawab = input('jawab: ')
+  
+  # memastikan agar hanya integer yang boleh diinput
+  marker = True
+  while marker:
+   try:
+    jawab = int(input("jawab: "))
+    break
+   except ValueError:
+    print("Masukkan hanya angka!\n")
+    
   end = datetime.datetime.now()
   time_delta = end-now
   total_waktu = time_delta.total_seconds()
@@ -156,7 +183,16 @@ def bagi(x3,x4) :
   c = a * b
   print(c, ' : ', a, ' = ')
   now = datetime.datetime.now()
-  jawab = input('jawab: ')
+  
+  # memastikan agar hanya integer yang boleh diinput
+  marker = True
+  while marker:
+   try:
+    jawab = int(input("jawab: "))
+    break
+   except ValueError:
+    print("Masukkan hanya angka!\n")
+    
   end = datetime.datetime.now()
   time_delta = end-now
   total_waktu = time_delta.total_seconds()
