@@ -38,7 +38,11 @@ Program Python nya akan men-generate soal random dengan cara men-generate sepasa
  
 Setelah anak mengisi soal-soal tersebut, akan ada laporan yang akan keluar. Seperti: total skor, waktu pengerjaan, rata2 waktu pengerjaan per soal, tipe soal yang memiliki skor tertinggi/terendah, dll. 
  
-Report ini bisa disajikan dalam bentuk grafik juga.
+_Report_ ini bisa disajikan dalam bentuk grafik juga.
+
+# _Clone Repo_
+
+Untuk menggunakan `program.py`, silakan _clone repo_ atau _copy file_ `program.py` ke _local_ Anda. Jalankan dengan __Python3__.
 
 ---
 
@@ -115,4 +119,8 @@ _Software_ dalam bentuk UI sudah dibuat dengan catatan sebagai berikut:
 
 ## 8 November 2021
 
-_Fixed_ masalah _non positive integer input_ pada `level` soal dan `n` soal.
+_Fixed_ masalah _non positive integer input_ pada `level` soal, `n` soal, dan _non integer input_ pada `jawaban` soal.
+
+## 9 November 2021
+
+Presentasi _RBL_ di kelas.
