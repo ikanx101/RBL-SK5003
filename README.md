@@ -42,7 +42,11 @@ _Report_ ini bisa disajikan dalam bentuk grafik juga.
 
 # _Clone Repo_
 
-Untuk menggunakan `program.py`, silakan _clone repo_ atau _copy file_ `program.py` ke _local_ Anda. Jalankan dengan __Python3__.
+Untuk menggunakan program ini, silakan _clone repo_ atau _copy file_ `main.py` dan `program.py` ke _local_ Anda. Jalankan dengan cara:
+
+```
+python3 main.py
+``` 
 
 ---
 
@@ -123,4 +127,9 @@ _Fixed_ masalah _non positive integer input_ pada `level` soal, `n` soal, dan _n
 
 ## 9 November 2021
 
-Presentasi _RBL_ di kelas.
+_Fixed typos_ dan persiapan presentasi _RBL_.
+
+## 13 November 2021
+
+- Penambahan `main.py` agar program bisa dieksekusi berulang-ulang kali.
+- Presentasi kelompok _RBL_
