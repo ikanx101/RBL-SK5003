@@ -2,25 +2,199 @@
 title: "LAPORAN FINAL RESEARCH-BASED LEARNING"
 subtitle: "Pemrograman dalam Sains SK 5002 Math Games for Kids"
 author: "20921003 Winda Wijaya 20921004 Mohammad Rizka Fadhli"
-institute: "Sains Komputasi Institut Teknologi Bandung"
+institute: "Magister Sains Komputasi Institut Teknologi Bandung"
 date: 14 November 2021
+fontsize: 12pt
 output: word_document
 ---
 
 ```{r,include=FALSE}
 rm(list=ls())
+library(dplyr)
 ```
 
 ## Abstrak
 
-Anak-anak generasi _alpha_ adalah generasi yang akrab dengan dunia _digital_ dan teknologi (_digital natives_). Pandemi yang datang secara mendadak mau tidak mau harus mengubah cara banyak orang tua untuk mengajarkan materi pelajaran di Sekolah. Salah satunya adalah berhitung. Program _math gamse for kids_ menawarkan kemudahan dalam hal memberikan soal latihan kepada anak sekaligus melakukan evaluasi secara otomatis sehingga memudahkan orang tua. Anak juga akan merasa senang karena proses belajarnya menjadi lebih mirip bermain _games_.
+Anak-anak generasi _alpha_ (kelahiran 2011 - 2025) adalah generasi yang akrab dengan dunia _digital_ dan teknologi (_digital natives_) (McCrindle, 2020). Mereka terlahir dengan berbagai teknologi yang sudah maju beserta segala kemudahannya. Pandemi yang datang secara mendadak mau tidak mau harus mengubah cara orang tua dan guru untuk mengajarkan materi pelajaran seperti berhitung. Program _math gamse for kids_ menawarkan kemudahan baik bagi orang tua, guru, dan anak dalam hal memberikan soal latihan sekaligus melakukan evaluasi secara otomatis. Program ini dibuat menggunakan bahasa _Python_ yang sudah populer dalam dunia _programming_ dan edukasi.
+
+\newpage
 
 # PENDAHULUAN
 
+## Latar Belakang
+
+Anak kelas 3 - 4 SD diharapkan sudah bisa mengerjakan soal penjumlahan, pengurangan, perkalian, dan pembagian yang sederhana. Untuk itu, mereka perlu mendapatkan latihan soal yang cukup. Sejak memasuki masa pandemi __Covid 19__, metode pendidikan berubah ke arah latihan mandiri, dengan kendala-kendala yang sering ditemui sebagai berikut:
+
+- Buku pelajaran dan latihan soal yang terbatas,
+- Keterbatasan guru atau orang tua dalam mengecek pekerjaan siswa,
+- Tingginya distraksi dari aktivitas lain seperti _video game_ terutama untuk generasi _alpha_ yang sangat fasih terhadap teknologi.
+
+Oleh karena itu, muncul ide untuk membuat suatu program yang bisa membuat soal latihan berhitung secara _random_ dan otomatis dengan tingkat kesulitan soal yang dapat disesuaikan. Sehingga akan tercipta soal latihan tidak terbatas banyaknya. Selain itu diharapkan anak menjadi senang karena akan terlihat seperti bermain _game_ di komputer atau _gadget_. 
+
+## Tujuan
+
+Membuat program yang dapat membuat soal latihan berhitung dengan sifat-sifat sebagai berikut:
+
+1. Soal dibuat dengan _random_,
+1. Soal dibuat secara otomatis,
+1. Tingkat kesulitan soal dapat disesuaikan,
+1. Proses evaluasi soal dilakukan secara otomatis.
+
+## Limitasi Penelitian
+
+Program ini ditujukan kepada anak kelas 3 - 4 SD. Oleh karena itu, setiap bilangan yang ada di soal merupakan __bilangan__ ___integer___ (bulat).
+
+## Metode
+
+Program akan dibuat menggunakan bahasa pemrograman _Python_ versi 3 dengan memanfaatkan beberapa _libraries_ tambahan.
+
+## Target _Output_ Penelitian
+
+Penelitian ini diharapkan akan menghasilkan suatu program yang dapat dijalankan di komputer atau _gadget_ berbasis _Python_ sebagai _interpreter_-nya. Untuk itu, kami membuat dua tahapan pengerjaan, yakni:
+
+- __TAHAP I__ berupa program dalam bentuk _command line interface_ (__CLI__). Program ini memiliki semua minimal fitur yang dibutuhkan seperti:
+    - _Generate random_ soal,
+    - Evaluasi jawaban anak,
+    - _Plot_ evaluasi dalam grafik,
+    - Penyimpanan rekap jawaban anak dalam suatu file berformat `.csv`.
+- __TAHAP II__ berupa program dalam bentuk _graphical user interface_ (__GUI__).
+    - Fitur yang dimiliki:
+        - _Generate random_ soal,
+        - Evaluasi jawaban anak,
+        - _Sound effects_ saat jawaban benar atau salah.
+    - Fitur yang belum dimiliki:
+        - _Plot_ evaluasi dalam grafik,
+        - Penyimpanan rekap jawaban anak dalam suatu file berformat `.csv`.
+
+\newpage
+
+# RINGKASAN STUDI PUSTAKA
+
+## _Games_ Edukasi Anak
+
+Sampai dengan saat ini, sudah banyak _games_ anak yang edukatif dan melatih kemampuan matematika seperti:
+
+```{r,echo=FALSE}
+game = c("Mencocokkan","Misteri","Strategi spasial","Strategi angka","Manajemen sumber daya")
+contoh = c("Go Fish & Domino","Tebak-tebakan","Catur & Battleship","Uno & Mancala","Monopoli")
+kemampuan = c("Memori","Logika","Memori, logika, & spasial","Aritmatika & identifikasi angka","Aritmatika & manajemen")
+
+data.frame(game,contoh,kemampuan) %>% 
+  rename("Jenis games" = game,
+         "Contoh games" = contoh,
+         "Kemampuan yang Dilatih" = kemampuan) %>% 
+  knitr::kable(caption = "sumber: understood.org")
+```
+
+Seiring dengan waktu, permainan berbasis komputasi mulai dibuat dan berkembang dengan sangat pesat. Perkembangan ini sedikit banyak disebabkan oleh semakin banyaknya bahasa pemograman dengan berbagai kemampuan baru yang ditawarkan untuk membangun permainan komputer yang lebih menarik.
+
+Bermain _game_ matematika mendukung berpikir strategis, menyelesaikan masalah, dan meningkatkan kelancaran dalam mengerjakan soal^[https://www.stem.org.uk]. Di Indonesia sendiri, telah diimplementasikan __Ujian Nasional Berbasis Komputer__ (__UNBK__) sebagai salah satu syarat kelulusan. Siswa tidak hanya perlu untuk memahami pelajaran, tetapi juga harus terbiasa mengerjakan soal menggunakan komputer^[unbk.kemendikbud.com]. Oleh karena itu prilaku terbiasa mengerjakan soal di komputer perlu dilatih karena akan sangat membantu kelancaran dan ketenangan siswa dalam menyelesaikan ujian.
+
+## Python
+
+Bahasa yang digunakan untuk membuat _game_ ini adalah _Python_. Disebut demikian karena pembuat bahasa tersebut adalah penggemar serial televisi Inggris ___Monty Python___. _Python_ populer dalam pengembangan _game_, selain pengembangan aplikasi hingga situs _web_. Bahkan __NASA__ dan __Google__ sangat bergantung pada _Python_ (McGuggan, 2007). Game populer seperti _Snakes_, _Flappy Bird_, _Tetris_, _Battlefield 2_, _The Sims 4_, _World of Tanks_, _Disney Toontown Online_ dan masih banyak lagi menggunakan bahasa _Python_ untuk membuatnya^[Wikipedia].
+
+Beberapa _libraries_ lain yang digunakan pada penyusunan program ini antara lain:
+
+1. `random`: digunakan untuk mendapatkan _function_ `randint()`. _Function_ ini berguna untuk _generate_ bilangan _integer_.
+1. `datetime`: digunakan untuk mendapatkan function `datetime.now()`. _Function_ ini berguna untuk mendapatkan waktu saat suatu perintah di-eksekusi. Kelak kita akan menghitung durasi anak menjawab sebuah soal.
+1. `matplotlib`: digunakan untuk membuat dan menyimpan grafik rekap jawaban anak.
+1. `numpy`: digunakan untuk menghitung dan merekap evaluasi jawaban anak.
+1. `pygames`: digunakan untuk membuat __GUI__ _games_.
+
+## Prinsip Komputasi
+
+Beberapa prinsip komputasi di Python yang digunakan antara lain:
+
+- _Function_
+    - Digunakan untuk memecah keseluruhan algoritma menjadi beberapa sub modul (sub algoritma) kecil sehingga lebih _manageable_.
+- _Looping_
+    - `for()` – digunakan untuk generate n-buah soal.
+    - `while()` – digunakan untuk memastikan bahwa _input_ yang dimasukkan berupa _integer_. Jika tidak, program akan meminta _user_ untuk memasukkan _input_ kembali.
+- _Conditional_
+    - Untuk mengecek jawaban anak.
+- _Data storage_
+    - Menyimpan rekap jawaban.
+- Visualisasi data
+
+\newpage
+
+# HASIL PENELITIAN
+## Program Versi CLI
+
+### _Flowchart Utama_
+
+Berikut adalah _flowchart_ dari program ini:
+
+```{r,echo=FALSE,fig.retina=10,fig.align='center',fig.cap="Flowchart Utama"}
+knitr::include_graphics("Main Program.png")
+```
+
+\newpage
+### _Flowchart Sub Algoritma_
+
+Berikut adalah _flowchart_ dari semua sub algoritma yang ada. Khusus pada _flowchart_ penjumlahan, pengurangan, perkalian, dan pembagian: __angka__ ___random__ __yang dibuat oleh__ ___function___ `randint()` __adalah bilangan bulat__.
+
+```{r,echo=FALSE,fig.retina=10,fig.align='center',fig.cap="Flowchart Penjumlahan"}
+knitr::include_graphics("penjumlahan.png")
+```
+
+\newpage
+
+```{r,echo=FALSE,fig.retina=10,fig.align='center',fig.cap="Flowchart Pengurangan"}
+knitr::include_graphics("pengurangan.png")
+```
+
+\newpage
+
+```{r,echo=FALSE,fig.retina=10,fig.align='center',fig.cap="Flowchart Perkalian"}
+knitr::include_graphics("perkalian.png")
+```
+
+\newpage
+
+```{r,echo=FALSE,fig.retina=10,fig.align='center',fig.cap="Flowchart Pembagian"}
+knitr::include_graphics("pembagian.png")
+```
+
+\newpage
+
+```{r,echo=FALSE,fig.retina=10,fig.align='center',fig.cap="Flowchart Rekap dan Plot"}
+knitr::include_graphics("rekap.png")
+```
+
+\newpage
+
+_Codes_ dari program ini disimpan dalam dua _files_, yakni:
+
+1. `program.py` berisi _codes_ dari _flowchart_ utama dan semua _flowchart_ sub algoritma.
+1. `main.py` merupakan program yang akan dieksekusi oleh _Python3_ saat:
+    - Anak mengeksekusi program __pertama kali__, ATAU
+    - Anak mau __mencoba kembali__ setelah menyelesaikan keseluruhan rangkaian soal.
+
+Isi dari `main.py` adalah sebagai berikut:
+
+```
+# set initial condition
+lagi = "y"
+# menanyakan apakah user mau coba lagi?
+while lagi == "y" or lagi == "Y":
+  exec(open("program.py").read())
+  lagi = input("Coba lagi? (y/n)")
+print("==== Terima kasih ====")
+```
+
+Kedua _files_ ini akan dilampirkan dalam laporan ini dan dapat diakses di halaman _Github Repository_ berikut: https://github.com/ikanx101/RBL-SK5003
 
 
-# METODE
+\newpage
 
-# HASIL
+# REFERENSI
 
+[1] McCrindle, M., Fell, A. (2020) Understanding Generation Alpha. McCrindle Research Pty Ldt.
 
+[2] McGugan, Will (2007) Beginning Game Development with Python dan Pygame from Novice to Professional. Apress.
+
+\newpage
+
+#
