@@ -20,7 +20,13 @@ output: word_document
 rm(list=ls())
 ```
 
+## Abstrak
+
+Anak-anak generasi _alpha_ adalah generasi yang akrab dengan dunia _digital_ dan teknologi (_digital natives_). Pandemi yang datang secara mendadak mau tidak mau harus mengubah cara banyak orang tua untuk mengajarkan materi pelajaran di Sekolah. Salah satunya adalah berhitung. Program _math gamse for kids_ menawarkan kemudahan dalam hal memberikan soal latihan kepada anak sekaligus melakukan evaluasi secara otomatis sehingga memudahkan orang tua. Anak juga akan merasa senang karena proses belajarnya menjadi lebih mirip bermain _games_.
+
 # PENDAHULUAN
+
+
 
 # METODE
 
