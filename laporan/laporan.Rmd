@@ -1,18 +1,9 @@
 ---
-title: |
-  | LAPORAN FINAL
-  | RESEARCH-BASED LEARNING
-subtitle: |
-  | Pemrograman dalam Sains
-  | SK 5002
-  | Math Games for Kids
-author: |
-  | 20921003 Winda Wijaya
-  | 20921004 Mohammad Rizka Fadhli
-institute: |
-  | Sains Komputasi
-  | Institut Teknologi Bandung
-date : 14 November 2021
+title: "LAPORAN FINAL RESEARCH-BASED LEARNING"
+subtitle: "Pemrograman dalam Sains SK 5002 Math Games for Kids"
+author: "20921003 Winda Wijaya 20921004 Mohammad Rizka Fadhli"
+institute: "Sains Komputasi Institut Teknologi Bandung"
+date: 14 November 2021
 output: word_document
 ---
 
